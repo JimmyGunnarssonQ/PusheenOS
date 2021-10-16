@@ -1,4 +1,6 @@
 from PIL import Image 
 imag = Image.open("Pusheen.jpg")
-for i in range(30):
-    imag.save(str(i) + ".jpg")
+i=0
+while True:
+    imag.save("Pusheen" + str(i) + ".jpg")
+    i+=1
